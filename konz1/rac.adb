@@ -24,7 +24,7 @@ package body Rac is
     return C;
   end "+";
 
-  procedure kiir (A: in out Raci) is
+  procedure kiir (A: Raci) is
   begin
     Put_Line(Integer'image(A.szamlalo) & "/" & Positive'image(A.nevezo));
   end kiir;
