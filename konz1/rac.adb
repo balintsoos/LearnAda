@@ -1,3 +1,6 @@
+with Ada.Text_IO;
+use Ada.Text_IO;
+
 package body Rac is
 
   procedure egyszerusit (A: Raci) is
@@ -20,5 +23,10 @@ package body Rac is
     C.szamlalo := (A.szamlalo * B.nevezo) + (A.nevezo * B.szamlalo);
     return C;
   end "+";
+
+  procedure kiir (A: in out Raci) is
+  begin
+    Put_Line(Integer'image(A.szamlalo) & "/" & Positive'image(A.nevezo));
+  end kiir;
 
 end Rac;
