@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project >
+    <file_marker column=" 11" line=" 5" >
+      <vfs_project>C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file>C:\Users\Soba95\Desktop\ada\hello.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 11" >
+      <vfs_project>C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file>C:\Users\Soba95\Desktop\ada\faktor.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 11" >
+      <vfs_project>C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file>C:\Users\Soba95\Desktop\ada\sum.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 10" >
+      <vfs_project>C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file>C:\Users\Soba95\Desktop\ada\eukl.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 56" line=" 5" >
+      <vfs_project>C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file>C:\Users\Soba95\Desktop\ada\lnko.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 42" line=" 9" >
+      <vfs_project>C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file>C:\Users\Soba95\Desktop\ada\nalattk.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 6" >
+      <vfs_project>C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file>C:\Users\Soba95\Desktop\ada\nalattk.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 21" line=" 2" >
+      <vfs_project>C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file>C:\Users\Soba95\Desktop\ada\nalattk.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 11" >
+      <vfs_project>C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file>C:\Users\Soba95\Desktop\ada\nalattk.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 9" >
+      <vfs_project>C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file>C:\Users\Soba95\Desktop\ada\nalattk.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 14" >
+      <vfs_project>C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file>C:\Users\Soba95\Desktop\ada\tokeletes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 28" line=" 13" >
+      <vfs_project>C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file>C:\Users\Soba95\Desktop\ada\pi.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 2" >
+      <vfs_project>C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file>C:\Users\Soba95\Desktop\ada\pi.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 40" line=" 8" >
+      <vfs_project>C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file>C:\Users\Soba95\Desktop\ada\pi.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 38" line=" 3" >
+      <vfs_project>C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file>C:\Users\Soba95\Desktop\ada\pi.adb</vfs_file>
+    </file_marker>
+  </Project>
+  <Project >
+    <file_marker column=" 11" line=" 5">
+      <vfs_project >C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file >C:\Users\Soba95\Desktop\ada\hello.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 11">
+      <vfs_project >C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file >C:\Users\Soba95\Desktop\ada\faktor.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 11">
+      <vfs_project >C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file >C:\Users\Soba95\Desktop\ada\sum.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 10">
+      <vfs_project >C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file >C:\Users\Soba95\Desktop\ada\eukl.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 56" line=" 5">
+      <vfs_project >C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file >C:\Users\Soba95\Desktop\ada\lnko.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 42" line=" 9">
+      <vfs_project >C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file >C:\Users\Soba95\Desktop\ada\nalattk.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 6">
+      <vfs_project >C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file >C:\Users\Soba95\Desktop\ada\nalattk.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 21" line=" 2">
+      <vfs_project >C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file >C:\Users\Soba95\Desktop\ada\nalattk.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 11">
+      <vfs_project >C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file >C:\Users\Soba95\Desktop\ada\nalattk.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 9">
+      <vfs_project >C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file >C:\Users\Soba95\Desktop\ada\nalattk.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 14">
+      <vfs_project >C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file >C:\Users\Soba95\Desktop\ada\tokeletes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 28" line=" 13">
+      <vfs_project >C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file >C:\Users\Soba95\Desktop\ada\pi.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 2">
+      <vfs_project >C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file >C:\Users\Soba95\Desktop\ada\pi.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 40" line=" 8">
+      <vfs_project >C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file >C:\Users\Soba95\Desktop\ada\pi.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 38" line=" 3">
+      <vfs_project >C:\Users\Soba95\Desktop\ada\hello.gpr</vfs_project>
+      <vfs_file >C:\Users\Soba95\Desktop\ada\pi.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
