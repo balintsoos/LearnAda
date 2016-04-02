@@ -21,11 +21,7 @@ package body J_String_Pkg is
 
   function Compare_To(S_Left, S_Right : J_String) return Boolean is
   begin
-    if S_Left.value = S_Right.value then
-      return true;
-    else
-      return false;
-    end if;
+    return S_Left.value = S_Right.value;
   end Compare_To;
 
   function Concat(S_Left, S_Right : J_String) return J_String is
@@ -52,12 +48,25 @@ package body J_String_Pkg is
 
   function Ends_With(S : J_String; Ch : Character) return Boolean is
   begin
-    if S.value(S.size) = Ch then
-      return true;
-    else
-      return false;
-    end if;
+    return S.value(S.size) = Ch;
   end Ends_With;
 
+  function Ends_With(S : J_String; Pattern : String) return Boolean is
+    l : Boolean := true;
+  begin
+    if Pattern'length > S.size then
+      return false;
+    end if;
+    for i in S.size - Pattern'length + 1 .. S.size loop
+      if S.value(i) /= Pattern(i - S.size + Pattern'length) then
+  			l := false;
+  		end if;
+    end loop;
+    return l;
+  end Ends_With;
 
+  function "="(S_Left, S_Right : J_String) return Boolean is
+  begin
+    return Compare_To(S_Left, S_Right);
+  end "=";
 end J_String_Pkg;

@@ -11,8 +11,12 @@ package J_String_Pkg is
   function Concat(S_Left, S_Right : J_String) return J_String;
   function Contains(S : J_String; Pattern : String) return Boolean;
   function Ends_With(S : J_String; Ch : Character) return Boolean;
+  function Ends_With(S : J_String; Pattern : String) return Boolean;
+  function "="(S_Left, S_Right : J_String) return Boolean;
+
   --
   private
+
   type J_String(size : Length := 20) is record
     value : String(1 .. size);
   end record;
