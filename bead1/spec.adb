@@ -7,7 +7,7 @@ procedure spec is
   Js1 : J_String := Create("test");
   Js2 : J_String := Create("tes");
 
-  numberOfTests : Natural := 34;
+  numberOfTests : Natural := 46;
   numberOfpassedTests : Natural := 0;
 
   procedure passed(Func : String) is
@@ -151,6 +151,54 @@ begin
 
   if Value_Of(Replace(Create("abca"), 'a', 'x')) = "xbcx" then
     passed("Replace");
+  end if;
+
+  if Starts_With(Create("abc"), 'a') then
+    passed("Starts_With");
+  end if;
+
+  if Starts_With(Create("bc"), 'a') = false then
+    passed("Starts_With");
+  end if;
+
+  if Starts_With(Create("a"), 'a') then
+    passed("Starts_With");
+  end if;
+
+  if Starts_With(Create("b"), 'a') = false then
+    passed("Starts_With");
+  end if;
+
+  if Starts_With(Create("abc"), "ab") then
+    passed("Starts_With");
+  end if;
+
+  if Starts_With(Create("abc"), "ba") = false then
+    passed("Starts_With");
+  end if;
+
+  if Starts_With(Create("abc"), "abc") then
+    passed("Starts_With");
+  end if;
+
+  if Starts_With(Create("abc"), "abcd") = false then
+    passed("Starts_With");
+  end if;
+
+  if Value_Of(Substring(Create("abc"), 1)) = "abc" then
+    passed("Substring");
+  end if;
+
+  if Value_Of(Substring(Create("abc"), 2)) = "bc" then
+    passed("Substring");
+  end if;
+
+  if Value_Of(Substring(Create("abc"), 1, 2)) = "ab" then
+    passed("Substring");
+  end if;
+
+  if Value_Of(Substring(Create("abc"), 1, 1)) = "a" then
+    passed("Substring");
   end if;
 
   Put_Line("===============");

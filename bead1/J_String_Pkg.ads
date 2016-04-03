@@ -1,6 +1,7 @@
 package J_String_Pkg is
 
   subtype J_Length is Natural range 0 .. 1024;
+
   type J_String(size : J_Length := 20) is private;
 
   -- functions
@@ -21,6 +22,10 @@ package J_String_Pkg is
   function Last_Index_Of(S : J_String; Ch : Character; From_Index : Positive) return Integer;
   function Length(S : J_String) return Natural;
   function Replace(S : J_String; Old_Ch, New_Ch : Character) return J_String;
+  function Starts_With(S : J_String; Ch : Character) return Boolean;
+  function Starts_With(S : J_String; Pattern : String) return Boolean;
+  function Substring(S : J_String; Begin_Index : Positive) return J_String;
+  function Substring(S : J_String; Begin_Index, End_Index : Positive) return J_String;
 
   -- private J_String type
   private

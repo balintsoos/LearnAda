@@ -144,4 +144,37 @@ package body J_String_Pkg is
     return New_S;
   end Replace;
 
+  function Starts_With(S : J_String; Ch : Character) return Boolean is
+  begin
+    return S.value(1) = Ch;
+  end Starts_With;
+
+  function Starts_With(S : J_String; Pattern : String) return Boolean is
+    l : Boolean := true;
+  begin
+    if Pattern'length > S.size then
+      return false;
+    end if;
+    for i in 1 .. Pattern'length loop
+      if S.value(i) /= Pattern(i) then
+        l := false;
+      end if;
+    end loop;
+    return l;
+  end Starts_With;
+
+  function Substring(S : J_String; Begin_Index : Positive) return J_String is
+  begin
+    return Substring(S, Begin_Index, S.size);
+  end Substring;
+
+  function Substring(S : J_String; Begin_Index, End_Index : Positive) return J_String is
+    New_S : J_String(End_Index - Begin_Index + 1);
+  begin
+    for i in Begin_Index .. End_Index loop
+      New_S.value(i - Begin_Index + 1) := S.value(i);
+    end loop;
+    return New_s;
+  end Substring;
+
 end J_String_Pkg;
