@@ -1,5 +1,5 @@
 generic
-	type elem is private;
+	type elem is (<>);
 	-- you can choose from these 3 options:
 	-- (<>) -> discret type, 'Image, 'Range, 'Succ, 'Pred
 	-- private -> no one above 4
