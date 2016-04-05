@@ -17,15 +17,16 @@ Package body sor is
 		s.hossz := s.hossz-1;
 	end;
 
-
 	procedure kiir(s : sora) is
 	begin
-		--for i in 1..s.hossz loop
-			--put(integer'image(s.t(i)) );
-		--end loop;
-		null;
+		for i in 1..s.hossz loop
+			kiirok(s.t(i));
+		end loop;
 	end;
 
-
+	procedure feltetelesKiiras(s : sora) is
+	begin
+		Put_Line(elem'image(s.t(felt(s.hossz))));
+	end;
 
 end;

@@ -4,13 +4,18 @@ generic
 	-- (<>) -> discret type, 'Image, 'Range, 'Succ, 'Pred
 	-- private -> no one above 4
 	-- limited private
+	with procedure kiirok(A : elem);
 
 package sor is
 	type sora(max : positive := 10) is private;
 
 	procedure push(s : in out sora; e : elem);
 	procedure pop(s : in out sora);
-	--procedure kiir(s : sora);
+	procedure kiir(s : sora);
+
+	generic
+		with function felt(i : Integer) return Integer;
+		procedure feltetelesKiiras(s : sora);
 
 	private
 		type tomb is array(integer range <>) of elem;
