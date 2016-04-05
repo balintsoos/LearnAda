@@ -3,26 +3,27 @@ use ada.text_IO;
 
 Package body sor is
 
-	procedure push(s: in out sora; e:integer) is
+	procedure push(s : in out sora; e : elem) is
 	begin
-		s.hossz:=s.hossz+1;
-		s.t(s.hossz):=e;
+		s.hossz := s.hossz+1;
+		s.t(s.hossz) := e;
 	end;
-	
-	procedure pop(s:in out sora) is
+
+	procedure pop(s : in out sora) is
 	begin
-		for i in 2..s.hossz loop
-			s.t(i-1):=s.t(i);
+		for i in 2 .. s.hossz loop
+			s.t(i-1) := s.t(i);
 		end loop;
-		s.hossz:=s.hossz-1;
+		s.hossz := s.hossz-1;
 	end;
-	
-	
-	procedure kiir(s:sora) is
+
+
+	procedure kiir(s : sora) is
 	begin
-		for i in 1..s.hossz loop
-			put(integer'image(s.t(i)) );
-		end loop;
+		--for i in 1..s.hossz loop
+			--put(integer'image(s.t(i)) );
+		--end loop;
+		null;
 	end;
 
 
