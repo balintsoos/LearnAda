@@ -1,14 +1,13 @@
-package Garden_Pkg is
+generic
+  type Position is (<>);
 
-  subtype Position is Positive range 1..10;
+package Garden_Pkg is
 
   function GetRandPos return Position;
   function GetField(pos : Position) return Boolean;
   procedure SprayField(pos : Position);
   procedure SprayAbsorbed;
 
-  private
-  type Fields is array(Integer range <>) of Boolean;
-  Garden : Fields(1..10) := (1..10 => false);
+  Fields : array(Position) of Boolean;
 
 end Garden_Pkg;

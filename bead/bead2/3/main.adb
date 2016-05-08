@@ -1,17 +1,16 @@
 with Ada.Text_IO, Ada.Integer_Text_IO, Garden_Pkg, tools;
-use Ada.Text_IO, Ada.Integer_Text_IO, Garden_Pkg, tools;
+use Ada.Text_IO, Ada.Integer_Text_IO, tools;
 
 procedure main is
 
+  task type Gardener;
   task type Mantis;
 
-  task Gardener is
-    entry MantisBorn;
-    entry MantisDied;
-  end Gardener;
+  type Gardener_Access is access Gardener;
+  type Mantis_Array is array (Integer range <>) of Mantis;
+  type Mantis_Array_Access is access Mantis_Array;
 
-  type Mantis_Access is access Mantis;
-  type Mantis_Array is array (Integer range <>) of Mantis_Access;
+  mantises : access Mantis_Array;
 
   task body Mantis is
     pos : Position := GetRandPos;
@@ -21,12 +20,9 @@ procedure main is
     begin
       hp := hp - 1;
       Output.Puts("Mantis died - pos:" & Position'Image(pos), 1);
-      Gardener.MantisDied;
     end MantisPoisoned;
 
   begin
-    Gardener.MantisBorn;
-
     while hp > 0 loop
       if GetField(pos) = true then
         MantisPoisoned;
@@ -43,16 +39,8 @@ procedure main is
 
   task body Gardener is
     pos : Position := GetRandPos;
-    numberOfAliveMantises : Boolean := 0;
+    isOneMantisAlive : Boolean := true;
   begin
-    loop
-      select
-      accept MantisBorn do
-        numberOfAliveMantises := numberOfAliveMantises + 1;
-      end MantisBorn;
-
-
-
     while isOneMantisAlive loop
       pos := GetRandPos;
       SprayField(pos);
@@ -64,14 +52,23 @@ procedure main is
   end Gardener;
 
   numberOfMantises : Positive;
+  numberOfFields : Positive;
 
 begin
+  Output.Puts("Number of mantises:", 0);
   Get(numberOfMantises);
 
+  Output.Puts("Number of fields:", 0);
+  Get(numberOfFields);
+
+  mantises := new Mantis_Array(1 .. numberOfMantises + 1);
+
   declare
-    mantises : Mantis_Array (1 .. numberOfMantises) := (others => new Mantis);
+    subtype Position is Positive range 1 .. numberOfFields;
+    package Garden is new Garden_Pkg(Position);
+
+    gardenerMan : Gardener_Access := new Gardener;
   begin
     null;
   end;
-
 end main;
