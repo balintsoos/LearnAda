@@ -1,9 +1,15 @@
+# File without extension
+*
+!/**/
+!*.*
+
 # Object file
 *.o
 
 # Ada Library Information
 *.ali
 
+# Windows executable
 *.exe
 
 .DS_Store
