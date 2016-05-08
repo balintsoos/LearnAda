@@ -1,0 +1,52 @@
+ZH
+
+1. (1 pont)
+Van egy par cipo, amelyek a porban csoroszkalnak. (Szumma harom taszk.)
+A por 10 lepes hosszu, utana vegeter.
+A cipok ugy mukodnek, hogy megnezik a porban, hogy a masik cipo
+labnyoma elotte van-e (megkerdezik a portol). Ha igen, lepnek egyet es
+labnyomot hagynak a porban (jelzik a pornak, hogy leptek),
+kulonben pihennek egy picit. Ha a por vegeter (tasking_error), megallnak.
+A bal cipo a legelejen mindenfelekeppen lepjen.
+
+2. (2 pont)
+Van egy csirke, es van egy kislany. A csirket etetni kell, mert
+a gyomraban masodpercenkent 1-gyel csokken a kendermagok szama. Ha
+a kendermagok szama nullara csokken, ehenhal. Ha viszont a kislany
+megeteti, 3 kendermaggal tobb lesz benne. (Kezdetben 4 van benne.)
+Jatszani is kell vele neha, mert ha 5 masodpercig nem jatszanak vele,
+banataban elpusztul. Ezt, es az ehenhalast egy olyan kivetel kivaltasaval
+jelzi (MEGPUSZTULOK), amelyet nem tud lekezelni senki. Ha a csirke
+30 kendermagot megeszik, felno es elrepul. A kislany ekkor kozli velunk
+a kepernyon, hogy elszomorodott.
+
+3. (3 pont)
+Irj egy generic package-et a kovetkezo tulajdonsagokkal:
+A generic parameterei egy tipus (T) es egy eljaras (Akcio), aminek egy T
+tipusu parametere van.
+A package-ben van egy eljaras (AszinkronAkcio), aminek van egy T tipusu
+parametere. Az AszinkronAkcio dinamikusan (access) letrehoz egy Agens tipusu
+taszkot, es annak egyetlen entry-jen keresztul atadja a T tipusu erteket, majd
+vegeter. Az Agens tipusu taszk a randevu utan vegrehajtja a T tipusu ertekkel
+az Akcio eljarast.
+
+Peldanyositsd ezt a kovetkezovel:
+A T tipus egy rekord, aminek ket mezoje van, egy POSITIVE es egy TID, ami
+egy 1 es N kozotti egesz szam. Az Akcio eljaras megadasahoz szukseg van egy
+Szamolo tipusu taszkokbol allo N hosszu vektorra (a TID tipus ertekei az ezen
+vektoron beluli indexek, a "taszk azonositok"). A Szamolo tipusu taszkoknak
+van egy UjabbAdat nevu entry-je, ami atvesz egy POSITIVE-ot. Az Akcio eljaras
+a parameterkent atadott rekord elso mezojevel hivja meg a masodik mezo altal
+azonositott Szamolo taszk UjabbAdat entry-jet.
+A Szamolo taszk az UjabbAdat entry-jen erkezo szamok kozul a legnagyobbat
+megtartja, a tobbit tovabbkuldi az eggyel nagyobb indexu Szamolo taszknak,
+megpedig ugy, hogy ehhez meghivja (megfeleloen parameterezve) a peldanyositott
+generic AszinkronAkcio eljarasat. Ha a Szamolo taszk 3 masodpercig nem kap
+uzenetet az UjabbAdat entry-jere, kiirja az azonositojat es a megtartott szamot
+a kepernyore, es aztan vegeter.
+(Segitsegkepp egy invarians: a Szamolo taszkban van egy valtozo, amiben az
+eddig megkapott legnagyobb szam szerepel; az osszes tobbi megkapott szamot
+pedig mar tovabbkuldte.)
+
+A foprogram (szinten az AszinkronAkcio-t hasznalva) elkuld az elso taszknak
+N szamot.

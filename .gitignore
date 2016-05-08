@@ -4,4 +4,6 @@
 # Ada Library Information
 *.ali
 
+*.exe
+
 .DS_Store
