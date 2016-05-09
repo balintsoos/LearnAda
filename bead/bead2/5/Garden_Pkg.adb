@@ -111,7 +111,7 @@ package body Garden_Pkg is
     if numberOfMantises = 0 then
       Output.Puts("Every mantis is dead", 1);
     elsif overdose = 3 then
-      Output.Puts("John is dead", 1);
+      Output.Puts("Gardener is dead", 1);
     end if;
   end Gardener;
 
